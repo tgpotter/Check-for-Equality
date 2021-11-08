@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class checkForEquality {
+public class CheckForEquality {
     public static void main(String[] args) {
 
         //user greeting and explanation of program functions
@@ -12,7 +12,7 @@ public class checkForEquality {
 
         // Menu was added to allow running multiple times without having to restart the program.
         // However adding the menu caused the program to loop, so I added an option to quit.
-        checkForEquality.optionMenu();
+        CheckForEquality.optionMenu();
     }
 
     private static void optionMenu() {
@@ -29,12 +29,12 @@ public class checkForEquality {
 
         // Process user input and move to chosen step
         switch (choice) {
-            case 1: checkForEquality.equalityCalc();
+            case 1: CheckForEquality.equalityCalc();
                 break;
             case 2: System.out.println("Goodbye");
                 break;
             default: System.out.println("Invalid choice");
-                checkForEquality.optionMenu();
+                CheckForEquality.optionMenu();
         menuInput.close();
         }
     }
@@ -61,10 +61,10 @@ public class checkForEquality {
                 result = "NOT OK";
             }
             System.out.println("Your result is: " + result);
-            checkForEquality.optionMenu();
+            CheckForEquality.optionMenu();
         } else {
             System.out.println("Please use valid 'Natural' numbers. (1,2,3,4,...)");
-            checkForEquality.equalityCalc();
+            CheckForEquality.equalityCalc();
         }
         calcInput.close();
     }
